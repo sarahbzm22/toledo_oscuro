@@ -19,7 +19,7 @@
   --font-tittle-2: 'Stay-Writer-Thin', sans-serif;
   --text-font: 'Montserrat', sans-serif;
   --webkit-color-main: #101010;
-  --webkit-color-transparency-1: rgb(16, 16, 16, 0.7);
+  --webkit-color-transparency-1: rgb(16, 16, 16, 0.8);
   --webkit-color-details: #f9b233;
   --webkit-color-transparency-2: rgba(63, 45, 14, 0.7);
   --webkit-color-text: #FFFFFF;
@@ -34,9 +34,14 @@ p {
   margin: 0;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
+h1, h2 {
+  font-family: var(--font-tittle-1);
+  font-size: 14em;
+  color: var(--webkit-color-details);
+}
+
+h2 {
+  font-size: 2em;
 }
 
 ul {
@@ -115,6 +120,13 @@ section {
   align-items: center;
 }
 
+#logo-menu a {
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #logo-menu img {
   height: 65%;
   width: auto;
@@ -149,7 +161,7 @@ section {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: clamp(12px, 2vw, 14px);
-  font-family: var(--text-font);
+  font-family: var(--font-tittle-1);
   
 }
 
@@ -189,7 +201,7 @@ section {
   z-index: 1;
 } */
 
-#first-part, #first-part2, #second-part, #third-part, #fourth-part, #fifth-part {
+#first-part, #second-part, #third-part, #fourth-part, #fifth-part, #first-part2, #second-part2, #third-part2, #fourth-part2, #fifth-part2, #sixth-part2, #seventh-part2 , #eighth-part2 , #ninth-part2 , #tenth-part2 , #eleventh-part2, #twelfth-part2 {
   background-size: cover;
   background-position: center;
   position: sticky;
@@ -202,13 +214,7 @@ section {
 }
 
 #first-part {
-  background-image: linear-gradient(var(--webkit-color-transparency-1)), url("../img/decoración/fondo-3.webp");
-  z-index: 0;
-}
-
-#first-part2 {
-  background-image: linear-gradient(var(--webkit-color-transparency-1)), url("../img/decoración/fondo-1.png");
-  top: 0;
+  background-image: linear-gradient(var(--webkit-color-transparency-1)), url("https://rutastoledoapie.es/wp-content/uploads/2022/07/Inmortal-1-rutas-por-toledo-rutastoledoapie.es_.webp");
   z-index: 0;
 }
 
@@ -216,7 +222,7 @@ section {
   position: fixed;
 } */
 
-#first-part div > div {
+#first-part div > figure {
   /* display: flex; */
   flex-direction: column;
   /* justify-content:center;
@@ -233,11 +239,13 @@ section {
   /* margin-bottom: 3em; */
 }
 
-/* #section-2 {
-  z-index: 2;
-} */
+#first-part2 {
+  background-image: linear-gradient(var(--webkit-color-transparency-1)), url("https://ik.imagekit.io/a8ydbgcop/Trabajo%20Web%20Toledo/5_2_catedral.jpg");
+  top: 0;
+  z-index: 0;
+}
 
-#second-part {
+#second-part, #second-part2 {
   z-index: 1;
    /* display: flex;
    justify-content: center;
@@ -245,7 +253,7 @@ section {
    flex-direction: row;
 }
 
-#second-part::before, #third-part::before, #fourth-part::before, #fifth-part::before {
+#second-part::before, #third-part::before, #fourth-part::before, #fifth-part::before, #second-part2::before, #third-part2::before, #fourth-part2::before, #fifth-part2::before, #sixth-part2::before, #seventh-part2::before , #eighth-part2::before , #ninth-part2::before , #tenth-part2::before , #eleventh-part2::before, #twelfth-part2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -259,11 +267,23 @@ section {
   z-index: -1; 
 }
 
-#second-part::before {
+#second-part::before, #fourth-part::before {
    background-image: linear-gradient(var(--webkit-color-transparency-2)), url("../img/decoración/fondo-1.png");
 }
 
-#second-part >div {
+#third-part::before, #fifth-part::before {
+  background-image: linear-gradient(var(--webkit-color-transparency-1)), url("../img/decoración/fondo-2.jpg");
+}
+
+#second-part2::before, #fourth-part2::before, #sixth-part2::before, #eighth-part2::before , #tenth-part2::before, #twelfth-part2::before {
+   background-image: linear-gradient(var(--webkit-color-transparency-1)), url("../img/decoración/fondo-2.jpg");
+}
+
+#third-part2::before, #fifth-part2::before, #seventh-part2::before , #ninth-part2::before, #eleventh-part2::before {
+   background-image: linear-gradient(var(--webkit-color-transparency-2)), url("../img/decoración/fondo-1.png");
+}
+
+#second-part >div, #third-part >div, #second-part2 >div, #third-part2 >div, #fourth-part2 >div, #fifth-part2 >div, #sixth-part2 >div, #seventh-part2 >div , #eighth-part2 >div , #ninth-part2 >div , #tenth-part2 >div, #eleventh-part2 >div, #twelfth-part2 >div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -273,38 +293,56 @@ section {
   padding: 2em;
 }
 
-#second-part img {
+#second-part img, #third-part img  {
   width: auto;
-  height: 70vh;
-  /* border: azure solid 1em; */
-  transform: rotate(-9deg);
-  outline: 1em solid azure;
-  outline-offset: -1em;
-  /* border-radius: 2em; */
+  height: 80vh;
 }
 
-#second-part p, #fourth-part p, #fifth-part p {
+#second-part2 img, #third-part2 img, #fourth-part2 img, #fifth-part2 img, #sixth-part2 img, #seventh-part2 img , #eighth-part2 img , #ninth-part2 img , #tenth-part2 img, #eleventh-part2 img {
+  width: auto;
+  height: 100vh;
+}
+
+#second-part img, #third-part img {
+  outline: 1em solid azure;
+  outline-offset: -1em;
+}
+
+#second-part img {
+  transform: rotate(-9deg);
+}
+
+#second-part p, #third-part p, #fourth-part p, #fifth-part p, footer p, #modal-form p, #second-part2 p, #third-part2 p, #fourth-part2 p, #fifth-part2 p, #sixth-part2 p, #seventh-part2 p , #eighth-part2 p , #ninth-part2 p , #tenth-part2 p, #eleventh-part2 p, #twelfth-part2 p {
   font-size: 1.5em;
   /* max-width: 70vw; */
   margin-bottom: 1em;
   text-align: left;
 }
 
-#third-part {
+.stack {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+#third-part, #third-part2 {
   z-index: 2;
+  flex-direction: row;
 }
 
-#third-part::before {
-  background-image: linear-gradient(var(--webkit-color-transparency-2)), url("../img/decoración/fondo-1.png");
+#third-part img {
+  transform: rotate(9deg);
 }
 
-#fourth-part {
+#fourth-part, #fourth-part2 {
  z-index: 3;
  flex-direction: column;
 }
 
-#fourth-part::before {
-  background-image: linear-gradient(var(--webkit-color-transparency-2)), url("../img/decoración/fondo-1.png");
+#fourth-part2 {
+  flex-direction: row;
 }
 
 #fourth-part >div {
@@ -350,13 +388,9 @@ section {
   }
 }
 
-#fifth-part {
+#fifth-part, #fifth-part2 {
   z-index: 4;
   flex-direction: row;
-}
-
-#fifth-part::before {
-  background-image: linear-gradient(var(--webkit-color-transparency-1)), url("../img/decoración/fondo-2.jpg");
 }
 
 #fifth-part >div {
@@ -364,6 +398,50 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 6em;
+}
+
+#sixth-part2, #seventh-part2 , #eighth-part2 , #ninth-part2 , #tenth-part2 , #eleventh-part2, #twelfth-part2 {
+  flex-direction: row;
+}
+
+#sixth-part2{
+  z-index: 5;
+}
+
+#seventh-part2 {
+  z-index: 6;
+}
+
+#eighth-part2 {
+  z-index: 7;
+}
+
+#ninth-part2 {
+  z-index: 8;
+}
+
+#tenth-part2 {
+  z-index: 9;
+}
+
+#eleventh-part2 {
+  z-index: 10;
+}
+
+#twelfth-part2 {
+  z-index: 11;
+}
+
+#graphic-cont {
+  width: 100%;
+  max-width: 38em;
+  margin: auto;
+}
+
+canvas {
+  width: 60vw; /*60vw*/
+  height: 60vh; /*60vh*/
 }
 
 /* Footer */
@@ -371,14 +449,70 @@ footer {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   /* margin-top: 5em; */
   background-color: var(--webkit-color-main);
-  z-index: 50;
+  z-index: 11;
   border-top-left-radius: 6em;
   border-top-right-radius: 6em;
+  gap: 8em;
+}
+
+#footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+footer p {
+  max-width: 40vw;
+  color: var(--webkit-color-details);
+  margin-bottom: 3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 36em;
+  gap: 2em;
+  justify-content: center;
+}
+
+.label {
+    display: none;
+}
+
+#name, #surname, #email, /*#phone-number*/ .confirm {
+  color:var(--webkit-color-main);
+  height: 2.5em;
+  border-radius: 3em;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: var(--font-tittle-1);
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+
+#name, #surname, #email /*#phone-number*/{
+  background-color: #FFFFFF;
+  padding-left: 1.5em;
+}
+
+.confirm {
+  background-color: var(--webkit-color-details);
+  margin-top: 2.5em;
+  width: 20vw;
+  align-self: center;
+}
+
+.confirm:hover {
+  cursor: pointer;
+  background-color: var(--webkit-color-text);
 }
 
 #logo-footer {
@@ -391,7 +525,7 @@ footer {
 }
 
 #logo-footer img {
-  height: 100%;
+  height: 20vh;
   width: auto;
   object-fit: cover;
 }
@@ -407,7 +541,12 @@ footer {
 
 .social-webs a {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
-  color: #FFFFFF;
+  color: var(--webkit-color-text);
+}
+
+.social-webs a:hover {
+  color: var(--webkit-color-details);
+  cursor: pointer;
 }
 
 .social-webs li {
@@ -415,6 +554,43 @@ footer {
   display: flex;
 }
 
-#sponsors img{
-  width: 80vw;
+#modal-form {
+    position: fixed;
+    z-index: 12;
+    top: 15vh;
+    /* left: 20%; */
+    width: 30vw;
+    height: 62vh;
+    background-color: var(--webkit-color-transparency-2);
+    backdrop-filter: blur(12px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    overflow: hidden;
+    padding: 2em;
+}
+
+#modal-form p {
+  text-align: center;
+}
+
+#back-home{
+  font-size: 1.2rem;
+    font-family: var(--font-tittle-1);
+    display: flex;
+    align-items: center;
+    color: var(--webkit-color-text);
+    background-color:var(--webkit-color-details);
+    padding: 0.7em 2em;
+    border-radius: 2em;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+#back-home:hover {
+  cursor: pointer;
+  background-color: var(--webkit-color-main);
 }
