@@ -5,23 +5,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Abrimos la ventana modal del form
+// Abre el menú
+function openMenu() {
+  console.log("Función openMenu");
+  $("#nav-menu > div ul").css("right", "0vw");
+}
+
+// Cierra el menú
+function closeMenu() {
+  console.log("Función closeMenu");
+  $("#nav-menu > div ul").css("right", "100vw");
+}
+
+// Abre la ventana modal del form
 function openFormModal() {
   console.log("Abriendo modal del form");
 
-  // Cogemos los valores del form
+  // Coge los valores del form
   const name = $("#name").val();
   const surname = $("#surname").val();
   const email = $("#email").val();
   const phone = $("#phone-number").val();
 
-  // Los mostramos en el modal
+  // Los muestra en el modal
   $("#n").text(name);
   $("#sn").text(surname);
   $("#eml").text(email);
   // $("#phn").text(phone);
 
-  // Mostramos el modal
+  // Mostra el modal
   $("#modal-form")
     .css("display", "flex")
     .hide()
@@ -31,7 +43,7 @@ function openFormModal() {
   return false;
 }
 
-// Cerramos la ventana modal
+// Cierra la ventana modal
 function closeFormModal() {
   console.log("Cerrando modal del formulario");
 
