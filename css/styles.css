@@ -895,10 +895,17 @@ form {
 
   #fifth-part >div {
     gap: 4em;
+    display: flex;
+    flex-direction: column;
   }
 
   #twelfth-part2 p {
     margin-top: 2em;
+  }
+
+  iframe {
+    width: 74vw;
+    height: 38vh;
   }
 
   footer {
@@ -955,5 +962,4 @@ form {
   .social-webs {
     margin-top: 4em;
   }
-
 }
